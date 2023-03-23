@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Very_dark_blue1: hsl(217, 54%, 11%);
+    --Very_dark_blue2: hsl(216, 50%, 16%);
+    --Very_dark_blue3: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --Soft_blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+}
+
+
+html, body, main {
+    height: 100%;
+    width: 100%;
+    font-family: 'Outfit', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very_dark_blue1);
+}
+.container {
+    height: 540px;
+    width: 328px;
+    background-color: var(--Very_dark_blue2);
+    padding: 22px 24px;
+    border-radius: 10px;
+}
+
+.container_image {
+    height: 279px;
+    width: 279px;
+    background-image: url(images/image-equilibrium.jpg);
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.container_tittle {
+
+    font-size: 22px;
+    color: var(--White);
+    padding-top: 22px;
+    padding-bottom: 17px;
+}
+
+.container_text {
+    font-size: 17px;
+    color: var(--Soft_blue);
+    padding-bottom: 18px;
+    line-height: 22px;
+}
+
+.container_icons {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.icon {
+    display: flex;
+    gap: 9px;
+}
+
+.icon1 {
+    color: var(--Cyan);
+}
+
+.icon2 {
+    color: var(--Soft_blue);
+    display: flex;
+    align-items: center;
+}
+
+.icon3 {
+    display: flex;
+    align-items: center;
+}
+
+hr {
+    border-color: var(--Soft_blue);
+    opacity: 20%;
+    padding: 0;
+    margin: 0;
+}
+
+.container_leyend {
+    display: flex;
+    gap: 15px;
+    padding: 15px 0;
+    align-items: center;
+}
+
+.avatar {
+    height: 34px;
+    width: 32px;
+    border-radius: 50%;
+    border: 1px solid var(--White);
+}
+
+.persona {
+    display: flex;
+    align-items: center;
+}
+
+
+.hoover_image {
+    visibility: hidden;
+    background-color: hsla(215, 52%, 70%, 0.5);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_image:hover .hoover_image{
+    visibility: visible;
+    cursor: pointer;
+}
+
+.container_tittle:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+span {
+    padding: 0 5px;  
+}
+
+span:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and(min-width: 1440px) {
+    body {
+        padding: 150px 0;
+    }
+}
